@@ -1,0 +1,302 @@
+*{
+	margin : 0 ;
+	padding : 0;
+}
+
+.nav-bar{
+	background: rgb(255,255,255);
+	height: 80px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+	z-index:1; /*Makes nav-bar over all other divs*/
+
+}
+
+.logo{
+	margin: 10px 50px;
+	height: 60px;
+}
+
+.menu{
+	float: right;
+	list-style: none;
+	margin: 20px; 	
+}
+.menu li{
+	display: inline-block;
+	margin: 10px 5px;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #005089;
+	padding: 5px 10px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 2px;
+	border-bottom: 1px solid #005089;
+}
+
+.menu li a:hover{
+	background: #c90c51;
+	transition: .4s;
+	color: #F7FFF7;
+	border-bottom: 1px solid #c90c51;
+}
+
+
+#CurrentMenuItem{
+	background: #c90c51;
+	color: #F7FFF7;
+	border-bottom: 1px solid #c90c51;
+
+}
+ 
+body{
+	background-image : linear-gradient(rgba(0,0,0,0.5),rgba(0,0,100,0.5)),url("images/bg7.jpg");
+	background-size : cover;
+	background-attachment: fixed;
+}
+/*.Main_Section{
+	background-image : linear-gradient(rgb(0,0,0,0.5),rgb(0,0,100,0.5)),url("images/bg7.jpg");
+	height : 100vh;
+	background-size : cover auto;
+	background-position : center;
+	background-repeat: no-repeat;
+	
+}*/
+.welcome{
+	position: relative;
+	text-align: center;
+	font-family: Georgia, serif;
+	color: #F7FFF7;
+	top: 120px;
+}
+
+.welcome h1{
+	font-size: 18px;
+	margin: 25px;
+}
+
+
+.container{
+	margin: 0 auto;
+	margin-top: 40px;
+	top: 105px;
+	width: 700px;
+	height: 450px;
+	position: relative;
+	background: #fff;
+	border: 3px solid #005089;
+	overflow: hidden;
+}
+
+
+.sliderbox{
+	position: absolute;
+	margin: 0;
+	width: 3500px;
+	-webkit-animation: sliderAnimation 18s infinite; /* Safari 4+ */
+	-moz-animation: sliderAnimation 18s infinite; /* Fx 5+ */
+	animation: sliderAnimation 18s infinite; /* IE 10+, Fx 29+ */
+}
+.sliderbox img{
+	float:left;
+}
+
+@keyframes sliderAnimation{
+	0%{left: 0px;}
+	20%{left: 0px;}
+	25%{left: -700px;}
+	45%{left: -700px;}
+	50%{left: -1400px;}
+	70%{left:-1400px;}
+	75%{left: -2100px;}
+	95%{left:-2100px;}
+	100%{left: -2800px;}
+}
+
+footer {
+	background: rgb(255,255,255);
+	height: 80px;
+	width: 100%;
+	text-align: center;
+	padding-top: 40px;
+	color: #005089;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	position: relative;
+	left: 0;
+	bottom: 0px;
+	top:200px;
+}
+
+/* Sugar Free Page*/
+article{
+	font-size: 18px;
+	margin: 0 auto;
+	margin-top: 130px;
+	margin-bottom: 60px;
+	width: 70%;
+	background-image: linear-gradient(rgba(220,220,220,0.85),rgba(250,250,250,0.85));
+	border-radius: 20px;
+	overflow: hidden;	
+	padding: 60px;
+	color: #2F3061;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+article ul{
+	margin-left: 40px;
+}
+article ol li{
+	margin-left: 30px;
+}
+article hr{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(100, 0, 0, 0), rgba(150, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+article a{
+	text-decoration: none;
+}
+article a:hover{
+	color: #c90c51;
+}
+
+/* selected link */
+article a:active {
+    color: blue;
+}
+
+/* visited link */
+article a:visited {
+    color: #4C87BF;
+}
+
+ table{
+	position: relative; 
+	border-spacing: 10px;
+	right: 10px;
+ }
+
+.Second a{
+	border: 1px solid #005089;
+	border-radius : 10px;
+	text-decoration: none;
+	padding: 3px 20px;
+}
+.Second a:hover{
+	color: #F7FFF7;
+	background: #c90c51;
+	transition: .4s;
+	border: 0px;
+}
+/* selected link */
+.Second a:active {
+    color: blue;
+}
+
+/* visited link */
+.Second a:visited {
+    color: #4C87BF;
+}
+.Second td {
+	text-align: center;
+}
+.Sources a{
+	text-decoration: none;
+	font-weight:bold;
+	text-align: center;
+}
+.Sources a:hover{
+	color: #c90c51;
+}
+.Sources td{
+	text-align: center;
+}
+/* selected link */
+.Sources a:active {
+    color: blue;
+}
+
+/* visited link */
+.Sources a:visited {
+    color: #4C87BF;
+}
+
+/*Sodium , whole grain, sugar Pages*/
+#SideImages{
+	float : right;
+	margin: 20px;
+}
+/*Contact page*/
+.contact-title{
+	text-align: center;
+	margin-top: 60px;
+	text-transform: uppercase;
+	transition: 4s all ease-in-out;
+	transition-property: all;
+}
+.contact-title h1{
+	font-size: 32px;
+}
+.contact-title h2{
+	font-size: 20px;
+}
+form {
+	margin-top: 50px;
+	transition: 4s all ease-in-out;	
+	transition-property: all;
+}
+
+.form-control{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid grey;
+	color: #2F3061;
+	font-size: 18px;
+	margin-bottom: 10px;
+	margin-left: 250px;
+}
+input{
+	height : 45px;
+}
+
+#SendButton{
+	background: #c90c51;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 50px;
+	margin-top: 20px;
+	padding: 5px 10px;
+	width: 600px;
+	margin-left: 250px;
+}
+#SendButton:hover{
+	background-color: #d90c51;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
