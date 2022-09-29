@@ -1,5 +1,5 @@
 # FoodWise Website
 
-A website about healthy food
+A website with artciles about healthy food
 
 Copyright (c) 2018 Zeina Kittaneh
